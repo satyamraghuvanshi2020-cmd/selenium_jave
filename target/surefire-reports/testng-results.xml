@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-15T15:42:23 IST" name="Surefire suite" finished-at="2026-07-15T15:42:42 IST" duration-ms="18533">
+    <groups>
+      <group name="Functional">
+        <method signature="PaymentTest.paymentInRupees()[pri:1, instance:Day44.PaymentTest@240237d2]" name="paymentInRupees" class="Day44.PaymentTest"/>
+        <method signature="PaymentTest.paymentInDollar()[pri:2, instance:Day44.PaymentTest@240237d2]" name="paymentInDollar" class="Day44.PaymentTest"/>
+      </group> <!-- Functional -->
+      <group name="Regression">
+        <method signature="PaymentTest.paymentInRupees()[pri:1, instance:Day44.PaymentTest@240237d2]" name="paymentInRupees" class="Day44.PaymentTest"/>
+        <method signature="SignUpTest.signupByEmail()[pri:1, instance:Day44.SignUpTest@2ed0fbae]" name="signupByEmail" class="Day44.SignUpTest"/>
+        <method signature="PaymentTest.paymentInDollar()[pri:2, instance:Day44.PaymentTest@240237d2]" name="paymentInDollar" class="Day44.PaymentTest"/>
+        <method signature="SignUpTest.signupByFaceBook()[pri:2, instance:Day44.SignUpTest@2ed0fbae]" name="signupByFaceBook" class="Day44.SignUpTest"/>
+        <method signature="SignUpTest.signupByTwitter()[pri:3, instance:Day44.SignUpTest@2ed0fbae]" name="signupByTwitter" class="Day44.SignUpTest"/>
+      </group> <!-- Regression -->
+      <group name="sanity">
+        <method signature="LoginTests.loginByEmail()[pri:1, instance:Day44.LoginTests@25a65b77]" name="loginByEmail" class="Day44.LoginTests"/>
+        <method signature="PaymentTest.paymentInRupees()[pri:1, instance:Day44.PaymentTest@240237d2]" name="paymentInRupees" class="Day44.PaymentTest"/>
+        <method signature="LoginTests.loginByFacebook()[pri:2, instance:Day44.LoginTests@25a65b77]" name="loginByFacebook" class="Day44.LoginTests"/>
+        <method signature="PaymentTest.paymentInDollar()[pri:2, instance:Day44.PaymentTest@240237d2]" name="paymentInDollar" class="Day44.PaymentTest"/>
+        <method signature="LoginTests.loginByTwitter()[pri:3, instance:Day44.LoginTests@25a65b77]" name="loginByTwitter" class="Day44.LoginTests"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2026-07-15T15:42:23 IST" name="Surefire test" finished-at="2026-07-15T15:42:42 IST" duration-ms="18533">
+      <class name="Day44.SignUpTest">
+        <test-method signature="signupByEmail()[pri:1, instance:Day44.SignUpTest@2ed0fbae]" started-at="2026-07-15T15:42:42 IST" name="signupByEmail" finished-at="2026-07-15T15:42:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupByEmail -->
+        <test-method signature="signupByTwitter()[pri:3, instance:Day44.SignUpTest@2ed0fbae]" started-at="2026-07-15T15:42:42 IST" name="signupByTwitter" finished-at="2026-07-15T15:42:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupByTwitter -->
+        <test-method signature="signupByFaceBook()[pri:2, instance:Day44.SignUpTest@2ed0fbae]" started-at="2026-07-15T15:42:42 IST" name="signupByFaceBook" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupByFaceBook -->
+      </class> <!-- Day44.SignUpTest -->
+      <class name="Day47.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Day47.LoginTest@214b199c]" started-at="2026-07-15T15:42:23 IST" name="setup" finished-at="2026-07-15T15:42:31 IST" duration-ms="8365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:0, instance:Day47.LoginTest@214b199c]" started-at="2026-07-15T15:42:31 IST" name="testLogin" finished-at="2026-07-15T15:42:41 IST" duration-ms="10035" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
+  (Session info: chrome=150.0.7871.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [99d1d9bea400887fd36db383d5e43baf, findElement {value=//input[@placeholder='Username'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: /var/folders/ys/6xd_frhd4jd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50438}, goog:processID: 8094, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50438/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99d1d9bea400887fd36db383d5e43baf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
+  (Session info: chrome=150.0.7871.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [99d1d9bea400887fd36db383d5e43baf, findElement {value=//input[@placeholder='Username'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: /var/folders/ys/6xd_frhd4jd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50438}, goog:processID: 8094, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50438/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99d1d9bea400887fd36db383d5e43baf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at Day47.LoginPage.setUserName(LoginPage.java:46)
+at Day47.LoginTest.testLogin(LoginTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day47.LoginTest@214b199c]" started-at="2026-07-15T15:42:41 IST" name="tearDown" finished-at="2026-07-15T15:42:42 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Day47.LoginTest -->
+      <class name="Day44.LoginTests">
+        <test-method signature="loginByEmail()[pri:1, instance:Day44.LoginTests@25a65b77]" started-at="2026-07-15T15:42:42 IST" name="loginByEmail" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginByEmail -->
+        <test-method signature="loginByFacebook()[pri:2, instance:Day44.LoginTests@25a65b77]" started-at="2026-07-15T15:42:42 IST" name="loginByFacebook" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginByFacebook -->
+        <test-method signature="loginByTwitter()[pri:3, instance:Day44.LoginTests@25a65b77]" started-at="2026-07-15T15:42:42 IST" name="loginByTwitter" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginByTwitter -->
+      </class> <!-- Day44.LoginTests -->
+      <class name="Day44.PaymentTest">
+        <test-method signature="paymentInRupees()[pri:1, instance:Day44.PaymentTest@240237d2]" started-at="2026-07-15T15:42:42 IST" name="paymentInRupees" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentInRupees -->
+        <test-method signature="paymentInDollar()[pri:2, instance:Day44.PaymentTest@240237d2]" started-at="2026-07-15T15:42:42 IST" name="paymentInDollar" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentInDollar -->
+      </class> <!-- Day44.PaymentTest -->
+      <class name="Day42.TestngFirstTestCase">
+        <test-method signature="OpenURL()[pri:1, instance:Day42.TestngFirstTestCase@12d3a4e9]" started-at="2026-07-15T15:42:42 IST" name="OpenURL" finished-at="2026-07-15T15:42:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenURL -->
+        <test-method signature="Login()[pri:2, instance:Day42.TestngFirstTestCase@12d3a4e9]" started-at="2026-07-15T15:42:42 IST" name="Login" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Logout()[pri:3, instance:Day42.TestngFirstTestCase@12d3a4e9]" started-at="2026-07-15T15:42:42 IST" name="Logout" finished-at="2026-07-15T15:42:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- Day42.TestngFirstTestCase -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
